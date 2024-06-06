@@ -150,6 +150,7 @@ void Vector::right_rotate(int times)
 
 // Problem 4 HomeWork
 int Vector::pop(int idx){
+    assert(0 <= idx && idx < size);
     int ret = arr[idx];
     for(int i = idx; i < size; i++)
     {
